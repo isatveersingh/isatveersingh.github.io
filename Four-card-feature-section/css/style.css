@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+html {
+    font-size: 10px;
+}
+
+p {
+    font-size: 1.5rem;
+    color: var(--Grayish-Blue);
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    padding: 40px;
+}
+
+.header {
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+.header .heading-1 {
+    font-size: 3rem;
+    font-weight: 200;
+    color: var(--Very-Dark-Blue);
+}
+
+.header .heading-2 {
+    font-size: 3rem;
+    color: var(--Very-Dark-Blue);
+}
+
+.card-container {
+    max-width: max-content;
+    max-height: max-content;
+    margin: 4rem auto;
+    /* background-color: rosybrown; */
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 3rem;
+
+    grid-template-areas: 
+    ". team-builder ."
+    "supervisor team-builder calculator"
+    "supervisor karma calculator"
+    ". karma ."
+    ;
+
+
+}
+
+.card-container .card {
+    max-width: 30rem;
+    /* border: 1px solid black; */
+    padding: 2rem;
+    background-color: var(--Very-Light-Gray);
+    box-shadow: 0 10px 10px 4px rgba(0, 0, 0, 0.1);
+    /* margin-bottom: 30px; */
+    border-radius: 0.5rem;
+}
+
+.card-container .card h3 {
+    font-size: 2rem;
+    color: var(--Very-Dark-Blue);
+}
+
+.card-container .card .img-box {
+    margin-top: 2rem;
+    height: 4rem;
+    text-align: right;
+}
+
+.card-container .card .img-box img {
+    height: 100%;
+}
+
+.supervisor {
+    grid-area: supervisor;
+    border-top: 5px solid var(--cyan);
+}
+.team-builder {
+    grid-area: team-builder;
+    border-top: 5px solid var(--red);
+}
+.karma {
+    grid-area: karma;
+    border-top: 5px solid var(--orange);
+}
+.calculator {
+    grid-area: calculator;
+    border-top: 5px solid var(--blue);
+}
+
+@media screen and (max-width: 768px) {
+    .card-container {
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: 
+        "supervisor"
+        "team-builder"
+        "karma"
+        "calculator";
+    }
+}
