@@ -39,10 +39,6 @@ html {
 .img-box {
     width: 100%;
     height: 100%;
-    /* background-image: url(../images/hero-desktop.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; */
     grid-area: img-box;
 }
 
@@ -122,11 +118,15 @@ html {
 }
 
 .content .form .input-box .error-img {
-    display: block;
+    width: 2rem;
+    display: none;
     position: absolute;
     top: 50%;
     right: 22%;
     transform: translateY(-50%);
+}
+.content .form .input-box .error-img.show {
+    display: block;
 }
 
 .content .form .error {
