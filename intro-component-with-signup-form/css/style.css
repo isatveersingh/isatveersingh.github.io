@@ -37,7 +37,7 @@ html {
 .text-container h2 {
     color: #fff;
     font-size: 4rem;
-    line-height: 1;
+    line-height: 1.2;
     margin-bottom: 2rem;
 }
 
@@ -63,24 +63,60 @@ html {
     border-radius: 1rem;
 }
 
-.form-container .form .input-box {
+.input-box {
+    margin: 1rem 0;
+}
+
+.input-box, .input-con, .input {
     width: 100%;
 }
 
-.form-container .form .input-box input {
-    width: 100%;
-    margin: 1rem 0;
-    height: 5rem;
+.input-box .input-con {
+    position: relative;
+}
+
+/* add .active class to show error if input field is invalid using javascript */
+.input-box .input-con .error-img {
+    display: none;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.input-box .input-con .error-img.active {
+    display: block;
+}
+
+/* add .active class to show error if input field is invalid using javascript */
+.input-box .error {
+    display: none;
+    font-size: 1.2rem;
+    text-align: right;
+    font-weight: 500;
+    font-style: italic;
+    color: var(--Red);
+}
+
+.input-box .error.active {
+    display: block;
+}
+
+/* add .active class to show error if input field is invalid using javascript */
+.input-box .input-con .input {
+    height: 4.5rem;
     border: 1px solid var(--Grayish-Blue);
     outline: none;
     border-radius: 0.5rem;
     padding: 1rem 2rem;
+    font-size: 1.5rem;
     font-weight: 500;
 }
 
-.form-container .form .input-box input:focus {
-    border-color: #000;
+.input-box .input-con .input.active {
+    border-color: var(--Red);
 }
+
 
 .form-container .form #submit {
     display: block;
@@ -117,5 +153,6 @@ html {
     .container {
         grid-template-columns: 100%;
         grid-template-rows: repeat(2, auto);
+        background-image: url(../images/bg-intro-mobile.png);
     }
 }
