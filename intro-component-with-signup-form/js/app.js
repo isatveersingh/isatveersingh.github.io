@@ -58,7 +58,7 @@ let validate = ()=>{
     }
 
     // If all input fields are valid then return true otherwise return false and form will not be submitted
-    if(fnameFlag == lnameFlag == emailFlag == passwordFlag == 1){
+    if(fnameFlag == 1 && lnameFlag == 1 && emailFlag == 1 && passwordFlag == 1){
         return true;
     } else {
         return false;
