@@ -9,7 +9,7 @@
     <title>Intro component with signup form</title>
 </head>
 <body>
-    <main class="container" role="main">
+    <main class="container">
         <div class="text-container" role="contentinfo">
             <h1 role="heading">Learn to code by watching others</h1>
             <p role="text">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understading how developers think is invaluable.</p>
@@ -21,36 +21,36 @@
             </div>
 
             <!-- if validate() funtion on form returns true then form will be submitted otherwise if it return false then form will not be submitted  -->
-            <form action="" class="form" onsubmit="return validate()" role="form">
+            <form action="" class="form" onsubmit="return validate()">
                 <div class="input-box">
                     <div class="input-con">
-                        <input role="form" type="text" class="input fname-error" id="firstname" placeholder="First Name">
+                        <input name="firstname" type="text" class="input fname-error" id="firstname" placeholder="First Name">
                         <img class="error-img fname-error" src="./images/icon-error.svg" alt="Error Img">
                     </div>
                     <p class="error fname-error">First name cannot be empty</p>
                 </div>
                 <div class="input-box">
                     <div class="input-con">
-                        <input role="form" type="text" class="input lname-error" id="lastname" placeholder="Last Name">
+                        <input name="lastname" type="text" class="input lname-error" id="lastname" placeholder="Last Name">
                         <img class="error-img lname-error" src="./images/icon-error.svg" alt="Error Img">
                     </div>
                     <p class="error lname-error">Last name cannot be empty</p>
                 </div>
                 <div class="input-box">
                     <div class="input-con">
-                        <input role="form" type="text" class="input email-error" id="email" placeholder="Email Address">
+                        <input name="email" type="text" class="input email-error" id="email" placeholder="Email Address">
                         <img class="error-img email-error" src="./images/icon-error.svg" alt="Error Img">
                     </div>
                     <p class="error email-error">Looks like this is not an email</p>
                 </div>
                 <div class="input-box">
                     <div class="input-con">
-                        <input role="form" type="password" class="input password-error" id="password" placeholder="Password">
+                        <input name="password" type="password" class="input password-error" id="password" placeholder="Password">
                         <img class="error-img password-error" src="./images/icon-error.svg" alt="Error Img">
                     </div>
                     <p class="error password-error">Password cannot be empty</p>
                 </div>
-                <input role="button" type="submit" value="claim your free trial" id="submit">
+                <input type="submit" value="claim your free trial" id="submit">
                 <p class="t-and-c">By clicking the button, you are agreeing to <a href="#">Terms and Services</a></p>
             </form>
         </div>
