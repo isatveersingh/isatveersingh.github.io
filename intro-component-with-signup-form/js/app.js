@@ -11,53 +11,59 @@ let validate = ()=>{
     let emailVal = email.value;
     let passwordVal = password.value;
 
-    // if any input field is invalid then valFlag will be 0 and function returns false
-    let valFlag = 0;
+    // if any input field is invalid then any Flag will be 0 and function returns false
+    let fnameFlag = 0, lnameFlag = 0, emailFlag = 0, passwordFlag = 0;
     
     // To validate First Name 
     if(firstNameVal == ""){
         setError("fname-error");
-        valFlag = 0;
+        fnameFlag = 0;
     } else {
         removeError("fname-error");
-        valFlag = 1;
+        fnameFlag = 1;
     }
     
     // To validate Last Name
     if(lastNameVal == ""){
         setError("lname-error");
-        valFlag = 0;
+        lnameFlag = 0;
     } else {
         removeError("lname-error");
-        valFlag = 1;
+        lnameFlag = 1;
     }
     
     // To validate Email Field in correct format
     let correctWay = /^[a-z0-9_.-]+@[a-z]+\.[a-z]+$/;
     if(emailVal == "" || !correctWay.test(emailVal)){
         setError("email-error");
-        valFlag = 0;
+        emailFlag = 0;
     } else {
         removeError("email-error");
-        valFlag = 1;
+        emailFlag = 1;
     }
     
 
     // To validate password field and password must be 8 char long
-    if(passwordVal == "" || passwordVal.length < 8){
+    if(passwordVal == ""){
         setError("password-error");
-        valFlag = 0;
-    } else {
+        passwordFlag = 0;
+    } else if(passwordVal.length < 8) {
+        setError("password-error");
+        document.querySelector(".error.password-error").innerHTML = "Password must be 8 char long";
+        passwordFlag = 0;
+    }
+    else {
         removeError("password-error");
-        valFlag = 1;
+        passwordFlag = 1;
     }
 
     // If all input fields are valid then return true otherwise return false and form will not be submitted
-    if(valFlag == 1){
+    if(fnameFlag == lnameFlag == emailFlag == passwordFlag == 1){
         return true;
-    } else if (valFlag == 0){
+    } else {
         return false;
     }
+
 }
 
 

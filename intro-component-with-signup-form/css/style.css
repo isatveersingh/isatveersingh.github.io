@@ -34,7 +34,7 @@ html {
     align-items: center;
 }
 
-.text-container h2 {
+.text-container h1 {
     color: #fff;
     font-size: 4rem;
     line-height: 1.2;
@@ -44,6 +44,10 @@ html {
 .text-container p {
     color: #fff;
     font-size: 1.6rem;
+}
+
+.form-container {
+    max-width: 60rem;
 }
 
 .form-container .price {
