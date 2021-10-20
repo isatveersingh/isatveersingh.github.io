@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+:root {
+--Blue: hsl(223, 87%, 63%);
+--Pale-Blue: hsl(223, 100%, 88%);
+--Light-Red: hsl(354, 100%, 66%);
+--Gray: hsl(0, 0%, 59%);
+--Very-Dark-Blue: hsl(209, 33%, 12%);
+
+--main-font: 'Libre Franklin', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--main-font);
+}
+
+html {
+    font-size: 10px;
+}
+
+.container {
+    max-width: 800px;
+    height: auto;
+    padding: 4rem 1rem;
+    text-align: center;
+    margin: auto;
+}
+
+.text {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.text h1 {
+    font-size: 4rem;
+    font-weight: 300;
+    color: var(--Gray);
+}
+
+.text h1 span {
+    font-weight: 600;
+    color: var(--Very-Dark-Blue);
+}
+
+.text p {
+    font-size: 2rem;
+    margin-top: 1rem;
+    color: var(--Very-Dark-Blue);
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    gap: 2rem;
+}
+
+.form input {
+    height: 4.5rem;
+    width: 100%;
+    padding: 1rem 3rem;
+    border-radius: 2.5rem;
+    border: none;
+    outline: none;
+}
+
+.form .email-box .email {
+    border: 1px solid var(--Gray);
+}
+
+.form .email-box .email.show {
+    border-color: var(--Light-Red);
+}
+
+.form .email-box .error-text {
+    display: none;
+    font-size: 1.2rem;
+    color: var(--Light-Red);
+    margin: 0.5rem 0;
+}
+
+.form .email-box .error-text.show {
+    display: block;
+}
+
+.form #submit {
+    background-color: var(--Blue);
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.form #submit:hover {
+    background-color: var(--Pale-Blue);
+}
+
+
+.hero-img {
+    margin: 4rem 0;
+    width: 100%;
+}
+
+.hero-img img {
+    width: 100%;
+}
+
+.social-icons a {
+    margin: 0 1rem;
+}
+
+.social-icons a i {
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    font-size: 1.6rem;
+    border-radius: 50%;
+    color: var(--Blue);
+}
+
+.social-icons a:hover i {
+    background-color: var(--Blue);
+    color: #fff;
+}
+
+footer {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    color: var(--Gray);
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        padding: 4rem 2rem;
+    }
+
+    .form {
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr;
+    }
+}
