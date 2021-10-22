@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+:root {
+    --Strong-Cyan: hsl(171, 66%, 44%);
+    --Light-Blue: hsl(233, 100%, 69%);
+    --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --Grayish-Blue: hsl(201, 11%, 66%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+html {
+    font-size: 10px;
+}
+
+.container {
+    margin: auto;
+    width: 100%;
+    padding: 0 3rem;
+}
+
+@media screen and (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+@media screen and (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1070px;
+    }
+}
+
+.center {
+    text-align: center;
+}
+
+.m-t-b {
+    margin: 5rem auto;
+}
+
+.m-small {
+    margin: 4rem auto;
+}
+
+img {
+    width: 100%;
+}
+
+.heading {
+    font-size: 3rem;
+    text-align: center;
+    line-height: 1.1;
+    color: var(--Dark-Grayish-Blue);
+}
+
+.heading-small {
+    font-size: 2.5rem;
+    color: var(--Dark-Grayish-Blue);
+    text-align: center;
+}
+
+.main-text {
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 2rem auto;
+    color: var(--Grayish-Blue);
+}
+
+.download-btn {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 100%;
+    gap: 2rem;
+}
+
+.btn {
+    font-size: 1.8rem;
+    font-weight: 600;
+    width: 100%;
+    color: #fff;
+    display: block;
+    padding: 1rem 0;
+    border: none;
+    outline: none;
+    border-radius: 2.5rem;
+    cursor: pointer;
+}
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn-ios {
+    background-color: var(--Strong-Cyan);
+    box-shadow: 0 3px hsl(171, 66%, 40%);
+}
+
+.btn-mac {
+    background-color: var(--Light-Blue);
+    box-shadow: 0 3px hsl(233, 100%, 65%);
+}
+
+.logo {
+    height: 20rem;
+    display: grid;
+    place-items: center;
+    background-image: url(../images/bg-header-mobile.png);
+    background-size: cover;
+}
+
+.logo img {
+    width: 12rem;
+}
+
+.clients-con {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 3rem;
+}
+
+.footer {
+    background-color: rgb(235, 235, 235);
+    width: 100%;
+    padding: 3rem;
+}
+
+.footer-con .logo-footer {
+    height: 16rem;
+    display: grid;
+    place-items: center;
+}
+
+.footer-con .footer-links .f-link {
+    display: block;
+    font-size: 1.8rem;
+    color: var(--Dark-Grayish-Blue);
+    text-decoration: none;
+    text-align: center;
+    margin: 2rem auto;
+}
+
+.footer-con .footer-links .f-link:hover {
+    color: var(--Strong-Cyan);
+}
+
+.footer-con .social-link {
+    text-align: center;
+}
+
+.footer-con .social-link i {
+    font-size: 3rem;
+    margin: 0 1.5rem;
+    cursor: pointer;
+    color: var(--Dark-Grayish-Blue);
+}
+
+.footer-con .social-link i:hover {
+    color: var(--Strong-Cyan);
+}
+
+@media screen and (min-width: 992px) {
+    .logo {
+        background-image: url(../images/bg-header-desktop.png);
+    }
+
+    .main-text {
+        max-width: 900px;
+    }
+
+    .download-btn {
+        grid-template-columns: repeat(2, 30rem);
+        justify-content: center;
+        grid-template-rows: auto;
+    }
+
+    .snippets-info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+    }
+
+    .snippets .heading-small, .snippets .main-text {
+        text-align: left;
+    }
+
+    .workflow {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+    }
+
+    .clients-con {
+        display: grid;
+        grid-template-columns: repeat(5, 20%);
+        margin: auto;
+    }
+
+    .footer-con .logo-footer {
+        height: 10rem;
+    }
+
+    .footer-con .logo-footer img {
+        width: 12rem;
+    }
+
+    .footer-con {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .footer-con .footer-links {
+        display: flex;
+        max-width: 50rem;
+        flex-wrap: wrap;
+    }
+
+    .footer-con .footer-links .f-link {
+        margin: 1rem 3rem;
+    }
+
+
+}
