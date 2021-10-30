@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+:root {
+    --Gradient: hsl(6, 100%, 80%), hsl(335, 100%, 65%);
+    --Pale-Blue: hsl(243, 100%, 93%);
+    --Grayish-Blue: hsl(229, 7%, 55%);
+    --Dark-Blue: hsl(228, 56%, 26%);
+    --Very-Dark-Blue: hsl(229, 57%, 11%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+html {
+    font-size: 10px;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--Very-Dark-Blue);
+    background-image: url(../images/bg-desktop.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom center;
+    display: grid;
+    place-items: center;
+    padding: 3rem;
+}
+
+.data-con {
+    width: 100%;
+    max-width: 90rem;
+    display: grid;
+    grid-template-columns: 0.4fr 0.6fr;
+    grid-template-rows: 0.3fr 0.7fr;
+    gap: 0 3rem;
+    grid-template-areas: 
+    "files ."
+    "files data-storage";
+}
+
+.data-con .files {
+    background-color: var(--Dark-Blue);
+    grid-area: files;
+    border-radius: 1rem 10rem 1rem 1rem;
+    padding: 3rem;
+}
+
+.data-con .files .logo {
+    margin-bottom: 3rem;
+}
+
+.data-con .files .icon-con {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, max-content);
+    gap: 1rem;
+}
+
+.data-con .files .icon-con .icon {
+    height: 4rem;
+    width: 4rem;
+    background-color: var(--Very-Dark-Blue);
+    text-align: center;
+    display: grid;
+    place-items: center;
+    border-radius: 0.5rem;
+}
+
+.data-con .data-storage {
+    background-color: var(--Dark-Blue);
+    grid-area: data-storage;
+    border-radius: 1rem;
+    padding: 3rem;
+    position: relative;
+}
+
+.data-storage .data-text {
+    color: #fff;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+}
+
+.data-storage .storage-bar {
+    width: 100%;
+    height: 2rem;
+    background-color: var(--Very-Dark-Blue);
+    border-radius: 1rem;
+    padding: 0.2rem;
+}
+
+.data-storage .storage-bar .storage-bar-fill {
+    width: 70%;
+    height: 100%;
+    background-image: linear-gradient(to right, var(--Gradient));
+    border-radius: 0.9rem;
+    position: relative;
+}
+
+.data-storage .storage-bar .storage-bar-fill .storage-bar-circle {
+    position: absolute;
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: #fff;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0.2rem;
+    border-radius: 50%;
+}
+
+.data-storage .storage-stats {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.data-storage .storage-stats .stats-text {
+    font-size: 1.4rem;
+    color: #fff;
+    font-weight: 700;
+}
+
+.data-storage .popup-data {
+    position: absolute;
+    top: -30%;
+    right: 3rem;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem 1rem 0 1rem;
+}
+.data-storage .popup-data::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-right: 1rem solid #fff;
+    border-top: 1rem solid #fff;
+    border-bottom: 1rem solid transparent;
+    border-left: 1rem solid transparent;
+    position: absolute;
+    top: 100%;
+    right: 0;
+}
+
+.data-storage .popup-data h2 {
+    font-size: 3.5rem;
+    color: var(--Very-Dark-Blue);
+    margin-right: 1rem;
+}
+
+.data-storage .popup-data .popup-text {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--Grayish-Blue);
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        background-image: url(../images/bg-mobile.png);
+        background-size: cover;
+    }
+
+    .data-con {
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto;
+        gap: 3rem;
+        grid-template-areas: 
+        "files"
+        "data-storage";
+    }
+
+    .data-storage .popup-data {
+        bottom: 0;
+        left: 50%;
+        top: auto;
+        right: auto;
+        border-radius: 1rem;
+        transform: translate(-50%, 50%);
+    }
+
+    .data-storage .popup-data::after {
+        display: none;
+    }
+}
