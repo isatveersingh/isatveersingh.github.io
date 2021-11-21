@@ -490,6 +490,6 @@ a {
 
 @media (min-width: 1200px) {
     .about-me .profile-img .avatar {
-        max-height: 40rem;
+        max-height: 30rem;
     }
 }
