@@ -1,0 +1,501 @@
+/* ============ Google Fonts =========== */
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/* ========= CSS Custom Properties Declared ============= */
+:root {
+    --background-color: #070C20;
+    --white-color: #fff;
+    --secondary-color: #3EE8E5;
+    --third-color: #0A3F69;
+    --text-color-primary: #858892;
+
+    --primary-font: 'Inter', sans-serif;
+    --second-font: 'Open Sans', sans-serif;
+    --big-font: 'Antonio', sans-serif;
+
+}
+
+/* ======== Default CSS Reset =========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ========== Utility Classes ============= */
+/* Main Container */
+.container {
+    margin: auto;
+    width: 100%;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+/* @media (min-width: 1300px) {
+    .container {
+        max-width: 1220px;
+    }
+} */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1340px;
+    }
+}
+
+
+
+/* Buttons */
+.info-btn {
+    border: 1px solid var(--secondary-color);
+    outline: none;
+    color: var(--secondary-color);
+    background-color: transparent;
+    width: 100%;
+    text-align: left;
+    padding: 1rem 3rem;
+    font-size: 1.6rem;
+    font-family: var(--second-font);
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.info-btn:hover {
+    border-color: var(--third-color);
+    color: var(--third-color);
+}
+
+.info-btn.active {
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+}
+/* ========= Header and Navigation Section ======= */
+
+.header {
+    width: 100%;
+    height: 100vh;
+    padding: 5rem 0;
+}
+
+/* .logo .logo-link {
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 700;
+} */
+
+/* .logo .logo-link span {
+    color: var(--secondary-color);
+} */
+
+.logo .logo-img {
+    max-height: 4.5rem;
+}
+
+.logo .logo-img .logo-img-group path:nth-child(1){
+    stroke-dasharray: 170%;
+    stroke-dashoffset: 170%;
+    animation: text-anim 2s ease forwards;
+}
+.logo .logo-img .logo-img-group path:nth-child(2){
+    stroke-dasharray: 125%;
+    stroke-dashoffset: 125%;
+    animation: text-anim 2s ease forwards 0.3s;
+}
+.logo .logo-img .logo-img-group path:nth-child(3){
+    stroke-dasharray: 115%;
+    stroke-dashoffset: 115%;
+    animation: text-anim 2s ease forwards 0.6s;
+}
+
+.logo .logo-img .logo-img-group path:nth-child(4){
+    stroke-dasharray: 165%;
+    stroke-dashoffset: 165%;
+    animation: text-anim 2s ease forwards 0.9s;
+}
+
+.logo .logo-img .logo-img-group path:nth-child(5){
+    stroke-dasharray: 140%;
+    stroke-dashoffset: 140%;
+    animation: text-anim 2s ease forwards 1.2s;
+}
+.logo .logo-img .logo-img-group path:nth-child(6){
+    stroke-dasharray: 140%;
+    stroke-dashoffset: 140%;
+    animation: text-anim 2s ease forwards 1.5s;
+}
+.logo .logo-img .logo-img-group path:nth-child(7){
+    stroke-dasharray: 155%;
+    stroke-dashoffset: 155%;
+    animation: text-anim 2s ease forwards 1.8s;
+}
+
+@keyframes text-anim {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+/* =========== Header Content =========== */
+.header-content {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-content .header-textbox {
+    max-width: 58rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.header-content .header-textbox .header-heading {
+    font-size: 5rem;
+    color: var(--white-color);
+}
+
+.header-content .header-textbox .header-heading span {
+    color: var(--secondary-color);
+}
+
+.header-content .header-textbox .header-text {
+    color: var(--text-color-primary);
+    font-size: 1.6rem;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+/* ============ To animate Mouse Image ============ */
+.mouse-icon-link {
+    cursor: pointer;
+    display: inline-block;
+}
+.mouse-icon-link:hover .mouse-icon .mouse-icon-arrow {
+    animation: arrow-animation 1s;
+}
+
+@keyframes arrow-animation {
+    from {
+        transform: translateY(-20%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+/* ============= About Me Section =============== */
+.about-section {
+    width: 100%;
+    height: 100vh;
+}
+
+.about-me {
+    width: 100%;
+    height: 100%;
+    padding: 4rem;
+    display: grid;
+    grid-template-columns: 0.6fr 0.4fr;
+    grid-template-rows: 0.4fr 0.3fr 0.3fr;
+    grid-template-areas: 
+    "profile-img profile-info"
+    "profile-img info-buttons"
+    "skills-info skills-info";
+    gap: 3rem;
+}
+
+.about-me .profile-img {
+    grid-area: profile-img;
+    padding: 4rem;
+    text-align: center;
+}
+
+.about-me .profile-img .avatar {
+    width: auto;
+    max-height: 100%;
+    display: inline-block;
+    border: 3px solid var(--secondary-color);
+    border-radius: 50%;
+}
+
+.about-me .profile-info {
+    grid-area: profile-info;
+    padding-left: 3rem;
+}
+
+.about-me .profile-info .about-heading {
+    font-size: 4rem;
+    color: var(--white-color);
+    text-transform: uppercase;
+}
+
+.about-me .profile-info .about-me-text {
+    font-size: 1.6rem;
+    color: var(--text-color-primary);
+    margin-top: 2rem;
+    line-height: 1.5;
+}
+
+.about-me .info-buttons {
+    grid-area: info-buttons;
+    padding-left: 3rem;
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 1rem;
+}
+
+.skills-info {
+    grid-area: skills-info;
+    display: none;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100%;
+    gap: 2rem;
+}
+
+.skills-info.active {
+    display: grid;
+}
+
+.skill-info-box {
+    display: none;
+    background-color: var(--background-color);
+    padding: 2rem;
+    border: 2px solid var(--secondary-color);
+}
+
+.skills-info.active .skill-info-box {
+    display: block;
+}
+
+.skill-info-box .skill-info-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 3rem;
+    margin-bottom: 2rem;
+}
+
+.skill-info-box .skill-info-main .skill-ratio {
+    font-size: 2rem;
+    color: var(--text-color-primary);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.skill-info-box .skill-info-main .skill-logo .skill-logo-img {
+    height: 2rem; 
+}
+
+.skill-info-box .skill-name {
+    font-size: 4rem;
+    font-family: var(--big-font);
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.skill-info-box:hover .skill-info-main .skill-ratio {
+    color: var(--background-color);
+}
+
+.skill-info-box:hover .skill-logo .skill-logo-img path {
+    fill: var(--background-color);
+}
+.skill-info-box:hover .skill-name {
+    color: var(--background-color);
+}
+.skill-info-box:hover {
+    background-color: var(--secondary-color);
+}
+
+/* ========= Languages Section ====== */
+.language {
+    grid-template-columns: 1fr 1fr;
+}
+
+
+/* ============== For Responsive Design =========== */
+@media (max-width: 1199px) {
+    .skill-info-box .skill-name {
+        font-size: 3.5rem;
+    }
+
+    .about-me .profile-img .avatar {
+        max-width: 40rem;
+        height: auto;
+    }    
+}
+
+@media (max-width: 991px) {
+    .info-btn {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .about-me {
+        grid-template-columns: 0.5fr 0.5fr;
+        grid-template-rows: 0.4fr 0.1fr 0.5fr;
+        grid-template-areas: 
+        "profile-img profile-info"
+        "info-buttons info-buttons"
+        "skills-info skills-info";
+    }
+
+    .about-me .profile-img {
+        padding: 2rem;
+        max-height: 25rem;
+    }
+
+    .about-me .profile-img .avatar {
+        max-width: 30rem;
+    }
+
+    .about-me .profile-info {
+        padding: 0;
+    }
+
+    .about-me .info-buttons {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        padding: 0;
+    }
+
+    .skills-info {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .language {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-me .profile-img .avatar {
+        max-width: 15rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .header {
+        padding: 3rem 1.5rem;
+    }
+
+    .header-content .header-textbox .header-heading {
+        font-size: 4rem;
+    }
+
+    .about-me {
+        padding: 2rem;
+        grid-template-columns: 100%;
+        grid-template-rows: 0.1fr 0.2fr 0.2fr 0.5fr;
+        grid-template-areas: 
+        "profile-img"
+        "profile-info"
+        "info-buttons"
+        "skills-info";
+        gap: 2.3rem;
+    }
+    
+    .about-me .profile-img {
+        padding: 0.5rem;
+        max-height: 10rem;
+    }
+    
+    .about-me .profile-info .about-heading {
+        font-size: 3rem;
+        display: none;
+    }
+    
+    .about-me .profile-info .about-me-text {
+        margin: 0 auto;
+        max-width: 30rem;
+        text-align: center;
+    }
+    
+    .about-me .info-buttons {
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 0.5rem;
+    }
+    
+    .skills-info {
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 1.5rem;
+    }
+    
+    .skills-info.active .skill-info-box {
+        display: flex;
+    }
+    
+    .skill-info-box {
+        padding: 0.5rem 1.5rem;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    
+    .skill-info-box .skill-info-main {
+        flex-direction: column;
+        margin: 0;
+    }
+    
+    .skill-info-box .skill-info-main .skill-ratio {
+        font-size: 1.5rem;
+    }
+    
+    .skill-info-box .skill-name {
+        font-size: 3rem;
+    }
+    
+    .skill-info-box .skill-info-main .skill-logo .skill-logo-img {
+        height: 1.5rem;
+    }
+}

@@ -1,0 +1,14 @@
+<svg class="mouse-icon" width="90" height="140" viewBox="0 0 23.813 37.042" xmlns="http://www.w3.org/2000/svg">
+   <path class="mouse-icon-stroke"
+      d="M11.906 0A11.88 11.88 0 000 11.907v13.229a11.88 11.88 0 0011.907 11.906 11.88 11.88 0 0011.906-11.906v-13.23A11.88 11.88 0 0011.907 0zm0 2.117c5.424 0 9.79 4.703 9.79 10.546V24.38c0 5.842-4.366 10.545-9.79 10.545-5.423 0-9.789-4.703-9.789-10.545V12.664c0-5.843 4.366-10.546 9.79-10.546z"
+      vector-effect="non-scaling-stroke" fill="#3ee8e5" paint-order="markers stroke fill" />
+   <circle class="mouse-icon-circle" cx="11.907" cy="8.743" r="3.969" vector-effect="non-scaling-stroke"
+      fill="#3ee8e5" paint-order="markers stroke fill" />
+   <g class="mouse-icon-arrow" fill="#3ee8e5" paint-order="markers stroke fill">
+      <rect width="2.117" height="8.996" x="12.771" y="-31.725" ry="1.058" transform="rotate(135)"
+         vector-effect="non-scaling-stroke" />
+      <rect width="2.117" height="8.996" x="29.608" y="5.892" ry="1.058" vector-effect="non-scaling-stroke"
+         transform="rotate(45)" />
+      <rect width="2.117" height="10.583" x="10.866" y="19.722" ry="1.058" vector-effect="non-scaling-stroke" />
+   </g>
+</svg>
