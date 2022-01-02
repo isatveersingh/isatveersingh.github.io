@@ -2,294 +2,245 @@
 <html lang="en">
 
 <head>
-    <link rel="shortcut icon" href="./favicon.svg" type="image/x-icon">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
-    <title>SatVeer Singh Personal Portfolio</title>
+    <title>SatVeer Singh</title>
 </head>
 
 <body>
-    <!-- Header and Navigation Section -->
-    <header class="header">
-        <div class="intro-section container grid-c2">
-            <div class="profile">
-                <div class="profile-img">
-                    <img src="./images/satveer.png" alt="SatVeer Singh" class="person-img">
-                </div>
-            </div>
+    <!-- ============== Header Section =========== -->
+    <div class="navigation">
+        <nav class="navbar container flex align-cen jus-sb">
+            <a href="" class="logo">SatVeer <span> Singh</span></a>
 
-            <div class="intro">
-                <p class="greeting medium-text">Hi there, I am</p>
-                <h1 class="person-name">SatVeer Singh</h1>
-                <p class="main-text description">I am Frontend Web Developer located in Rajasthan, India. I am
-                    passionate about solving business problems through human-centered design and building exceptional
-                    digital experiences.</p>
-                <a href="#contact" class="cta-btn">Hire Me!</a>
+            <ul class="nav-links flex align-cen">
+                <li class="nav-li">
+                    <a href="#home" class="nav-link-item">Home</a>
+                </li>
+                <li class="nav-li">
+                    <a href="#services" class="nav-link-item">Services</a>
+                </li>
+                <li class="nav-li">
+                    <a href="#about" class="nav-link-item">About</a>
+                </li>
+                <li class="nav-li">
+                    <a href="#tools" class="nav-link-item">Tools</a>
+                </li>
+                <li class="nav-li">
+                    <a href="#portfolio" class="nav-link-item">Portfolio</a>
+                </li>
+                <li class="nav-li">
+                    <a href="#contact" class="nav-link-item">Contact</a>
+                </li>
+                <img src="./images/icons/close.svg" alt="Close Menu" class="menu-close">
+            </ul>
+
+            <img src="./images/icons/bars.svg" alt="bars" class="menu-open">
+        </nav>
+    </div>
+    <header class="header back-img-fit overlay" id="home">
+        <div class="header-content container">
+            <div class="header-content-box">
+                <h1 class="big-text-alt">I design and develop <span> experiences</span> that make <span>people's
+                        lives</span> simple</h1>
+                <p class="text-sm">Designing user-centric, modern interfaces for digital products or services which
+                    helps transfers the brand’s strengths and visual assets to a product’s interface.</p>
+
+                <a href="#contact" class="main-btn-alt">Hire Me</a>
             </div>
         </div>
     </header>
 
-    <!-- Skills Section -->
-    <section class="skills-section">
-        <h2 class="section-heading">My Web Dev Skills</h2>
-        <p class="main-text">Here are a few technologies I’ve been working with recently</p>
-        <div class="skills container section">
-            <div class="card skill reveal-on-scroll">
-                <div class="skill-img">
-                    <i class="fab fa-html5"></i>
-                </div>
-                <p class="big-text">HTMl 5</p>
+    <!-- =========== Services Section ========== -->
+    <section class="services" id="services">
+        <div class="hero container flex align-cen jus-sb">
+            <span class="text-md">Quality Work</span>
+            <img src="./images/icons/arrow.svg" alt="arrow" class="arrow-img">
+            <span class="text-md">Consistency</span>
+            <img src="./images/icons/arrow.svg" alt="arrow" class="arrow-img">
+            <span class="text-md">Fast Delivery</span>
+        </div>
+
+        <div class="services-content container">
+            <div class="heading flex align-cen jus-sb">
+                <h2 class="main-heading">What I Do <span>?</span></h2>
+                <p class="text-sm">Here are a few technologies I’ve been working with recently</p>
             </div>
-            <div class="card skill reveal-on-scroll">
-                <div class="skill-img">
-                    <i class="fab fa-css3-alt"></i>
+
+            <div class="services-box grid-3">
+                <div class="item back-img-fit overlay">
+                    <img src="./images/icons/code-icon.png" alt="Frontend development" class="service-img">
+                    <h3 class="text-md">Frontend Development</h3>
+                    <p class="main-text">Build best websites with accessibility features for every type of user. I
+                        create layouts that adjust to any type of screen size, desktop, tablet or mobile.</p>
                 </div>
-                <p class="big-text">CSS 3</p>
-            </div>
-            <div class="card skill reveal-on-scroll">
-                <div class="skill-img">
-                    <i class="fab fa-js"></i>
+                <div class="item back-img-fit overlay">
+                    <img src="./images/icons/wordpress-development.png" alt="Wordpress development" class="service-img">
+                    <h3 class="text-md">WordPress Development</h3>
+                    <p class="main-text">Defining business problems, building strategies to piece together the business
+                        goal and user needs by designing meaningful experiences.</p>
                 </div>
-                <p class="big-text">JavaScript</p>
-            </div>
-            <div class="card skill reveal-on-scroll">
-                <div class="skill-img">
-                    <i class="fab fa-bootstrap"></i>
+                <div class="item back-img-fit overlay">
+                    <img src="./images/icons/animation.png" alt="Web development" class="service-img">
+                    <h3 class="text-md">Responsive Web Animation</h3>
+                    <p class="main-text">I create animated micro-interactions usually to make things more engaging and
+                        less boring. Create visually apealing websites with awesome svg and css animations.</p>
                 </div>
-                <p class="big-text">Bootstrap</p>
-            </div>
-            <div class="card skill reveal-on-scroll">
-                <div class="skill-img">
-                    <i class="fab fa-wordpress"></i>
-                </div>
-                <p class="big-text">WordPress</p>
-            </div>
-            <div class="card skill reveal-on-scroll">
-                <div class="skill-img">
-                    <i class="fab fa-linux"></i>
-                </div>
-                <p class="big-text">Linux</p>
             </div>
         </div>
     </section>
 
-    <!-- ============= Services Section =============== -->
-    <section class="services-section">
-        <h2 class="section-heading">I provide you best services</h2>
-        <div class="services container grid-c2 section">
-            <div class="service-text reveal-on-scroll">
-                <p class="big-text">Accessibility</p>
-                <p class="main-text">Build best websites with accessibility features for every type of user. Designing
-                    user-centric, modern interfaces for digital products or services which helps transfers the brand’s
-                    strengths and visual assets to a product’s interface.</p>
+    <!-- ============ About Section =============== -->
+    <section class="about back-img-fit overlay" id="about">
+        <div class="about-content container grid-2 align-cen">
+            <div class="profile-img">
+                <img src="./images/satveersingh.png" alt="SatVeer Singh">
             </div>
 
-            <div class="services-img reveal-from-side">
-                <img src="./images/accessibility.svg" alt="Accessibility">
-            </div>
-        </div>
-
-        <div class="services container grid-c2">
-            <div class="services-img reveal-from-side">
-                <img src="./images/responsive.svg" alt="responsive">
-            </div>
-
-            <div class="service-text reveal-on-scroll">
-                <p class="big-text">Responsive</p>
-                <p class="main-text">I create layouts that adjust to any type of screen size, desktop, tablet or mobile.
-                    Defining business problems, building strategies to piece together the business goal and user needs
-                    by designing meaningful experiences.</p>
-            </div>
-        </div>
-
-        <div class="services container grid-c2">
-            <div class="service-text reveal-on-scroll">
-                <p class="big-text">Animations</p>
-                <p class="main-text">I create animated micro-interactions usually to make things more engaging and less
-                    boring. Create visually apealing websites with awesome svg and css animations.</p>
-            </div>
-
-            <div class="services-img reveal-from-side">
-                <img src="./images/animations.svg" alt="animations">
+            <div class="profile-info">
+                <h2 class="big-text">Who Am I <span>?</span></h2>
+                <p class="main-text">I am Frontend Web Developer located in Rajasthan, India. I am passionate about
+                    solving business problems through <span> human-centered design</span> and building exceptional
+                    digital experiences.</p>
+                <p class="main-text">Well organised person,<span> problem solver</span>, independent employee with high
+                    attention to detail. Fan of Game Of Thrones Series and Cricket. Curious by nature and Business mind.
+                </p>
             </div>
         </div>
     </section>
 
-    <!-- ============ Tools Section =============== -->
-    <section class="tools-section">
-        <h2 class="section-heading">Tools that I use</h2>
-        <div class="tools grid-c4 container section">
-            <div class="tool reveal-on-scroll">
-                <p class="big-text">Tools are most important thigs for creative work.</p>
-                <p class="main-text">Best tools make your work more productive. Here are some tools that I user for my
+    <!-- =========== Tools Section ============= -->
+    <section class="tools" id="tools">
+        <div class="container tools-section">
+            <div class="heading">
+                <h2 class="main-heading">What I <span>Use</span>?</h2>
+                <p class="text-sm">Best tools make your work more productive. Here are some tools that I use for my
                     speedy and creative work.</p>
             </div>
 
-            <div class="tool reveal-on-scroll">
-                <div class="tool-img">
-                    <img src="./images/figma-1.svg" alt="Figma">
+            <div class="tools-container grid-3">
+                <div class="tool">
+                    <img src="./images/icons/figma.svg" alt="Figma" class="tool-img">
+                    <h3 class="tool-name">Figma</h3>
+                    <p class="main-text">My main design tool mostly for collaboration and for its different design
+                        elements</p>
                 </div>
-                <p class="big-text">Figma</p>
-                <p class="main-text">My main design tool mostly for collaboration and for its different design elements
-                </p>
-            </div>
-
-            <div class="tool reveal-on-scroll">
-                <div class="tool-img">
-                    <img src="./images/adobe-xd.svg" alt="Adobe XD">
+                <div class="tool">
+                    <img src="./images/icons/adobe-xd.svg" alt="Adobe XD" class="tool-img">
+                    <h3 class="tool-name">Adobe XD</h3>
+                    <p class="main-text">For creating wireframes, user flows user interfaces and creating testable
+                        mockups.</p>
                 </div>
-                <p class="big-text">Adobe XD</p>
-                <p class="main-text">For creating wireframes, user flows user interfaces and creating testable mockups.
-                </p>
-            </div>
-
-            <div class="tool reveal-on-scroll">
-                <div class="tool-img">
-                    <img src="./images/photoshop-cc-4.svg" alt="Photoshop">
+                <div class="tool">
+                    <img src="./images/icons/photoshop.svg" alt="photoshop" class="tool-img">
+                    <h3 class="tool-name">Photoshop</h3>
+                    <p class="main-text">Mostly for image editing and retouching for more advanced photo editing. For
+                        PSD Designs.</p>
                 </div>
-                <p class="big-text">Photoshop</p>
-                <p class="main-text">Mostly for image editing and retouching for more advanced photo editing. For PSD
-                    Designs.</p>
-            </div>
-
-            <div class="tool reveal-on-scroll">
-                <div class="tool-img">
-                    <img src="./images/inkscape.svg" alt="Inkscape">
+                <div class="tool">
+                    <img src="./images/icons/inkscape.svg" alt="Inkscape" class="tool-img">
+                    <h3 class="tool-name">Inkscape</h3>
+                    <p class="main-text">Its Free and Open Source Vector Illustration tool. Best Tool for svg graphics.
+                    </p>
                 </div>
-                <p class="big-text">Inkscape</p>
-                <p class="main-text">Its Free and Open Source Vector Illustration tool. Best Tool for svg graphics.</p>
-            </div>
-
-            <div class="tool reveal-on-scroll">
-                <div class="tool-img">
-                    <img src="./images/visual-studio-code-1.svg" alt="Visual Studio Code">
+                <div class="tool">
+                    <img src="./images/icons/vs-code.svg" alt="vs-code" class="tool-img">
+                    <h3 class="tool-name">VS Code</h3>
+                    <p class="main-text">Visual Studio Code is best code editor out there. Tons of plugins available for
+                        productivity.</p>
                 </div>
-                <p class="big-text">VS Code</p>
-                <p class="main-text">Visual Studio Code is best code editor out there. Tons of plugins available for
-                    productivity.</p>
-            </div>
-
-            <div class="tool reveal-on-scroll">
-                <div class="tool-img">
-                    <img src="./images/sass-1.svg" alt="SASS">
+                <div class="tool">
+                    <img src="./images/icons/sass.svg" alt="sass" class="tool-img">
+                    <h3 class="tool-name">SASS/SCSS</h3>
+                    <p class="main-text">Visual Studio Code is best code editor out there. Tons of plugins available for
+                        productivity.</p>
                 </div>
-                <p class="big-text">SASS/SCSS</p>
-                <p class="main-text">This is best tool for faster CSS productivity. Best tool for time saving for web
-                    development</p>
             </div>
         </div>
     </section>
 
-    <!-- ============ Working Process =============== -->
-    <section class="working-process">
-        <h2 class="section-heading">Working Process</h2>
-        <div class="container grid-c2 working section">
-            <div class="working-text">
-                <div class="work-step">
-                    <div class="process-title">
-                        <span class="step-no">1</span>
-                        <p class="big-text step-name">Research</p>
+    <!-- ================ Portfolio Section ============ -->
+    <section class="portfolio" id="portfolio">
+        <div class="container portfolio-section">
+            <div class="heading">
+                <h2 class="main-heading">What I <span>Make</span>?</h2>
+                <p class="text-sm">My work speaks for itself.</p>
+            </div>
+
+            <div class="portfolio-container grid-3">
+                <div class="portfolio-item">
+                    <img src="./images/portfolio/grocery-website-2.PNG" alt="Grocery Store" class="portfolio-img">
+                    <div class="portfolio-text">
+                        <h3 class="portfolio-name">Grocery Store website</h3>
+                        <p class="main-text">This is a demo project of a Grocery Store Website. This is complete responsive for every screen size. While creating this no Frameworks or libraries are used.</p>
+                        <a href="https://isatveersingh.github.io/grocery-store/" class="main-btn">Visit Now</a>
                     </div>
-                    <p class="main-text description">This phase is the foundation upon which the entire project is
-                        planned and developed before building a website.</p>
                 </div>
-                <div class="work-step">
-                    <div class="process-title">
-                        <span class="step-no">2</span>
-                        <p class="big-text step-name">Planning</p>
+                <div class="portfolio-item">
+                    <img src="./images/portfolio/flower-shop-website.PNG" alt="flower-shop-website" class="portfolio-img">
+                    <div class="portfolio-text">
+                        <h3 class="portfolio-name">Flower Shop Website</h3>
+                        <p class="main-text">This is a demo website for a Flower Shop. For this no libraries are used. This is complete responsive.</p>
+                        <a href="https://isatveersingh.github.io/flower-shop-website/" class="main-btn">Visit Now</a>
                     </div>
-                    <p class="main-text description">The look and feel of the website is very important for successful
-                        engagement and retention of the target audience.</p>
                 </div>
-                <div class="work-step">
-                    <div class="process-title">
-                        <span class="step-no">3</span>
-                        <p class="big-text step-name">Development</p>
+                <div class="portfolio-item">
+                    <img src="./images/portfolio/plant-website.PNG" alt="plant-website" class="portfolio-img">
+                    <div class="portfolio-text">
+                        <h3 class="portfolio-name">Plant Store</h3>
+                        <p class="main-text">This is a Plant Store demo website. Completely responsive for every type of device. Used HTML CSS and Javascript</p>
+                        <a href="https://isatveersingh.github.io/plant-website/" class="main-btn">Visit Now</a>
                     </div>
-                    <p class="main-text description">In the development phase, functional elements of the website are
-                        built</p>
                 </div>
             </div>
-
-            <div class="working-img">
-                <img src="./images/working-process.svg" alt="Working Process">
+            <div class="load-box">
+                <button class="load">Load More</button>
             </div>
         </div>
     </section>
 
-    <!-- Portfolio Section -->
-    <section class="portfolio-section">
-        <h2 class="section-heading">My work speaks for itself</h2>
-        <div class="portfolio section container">
-            <div class="project-card">
-                <div class="project-img">
-                    <img src="./images/fylo-landing-page.jpg" alt="fylo-landing-page">
-                </div>
-                <div class="project-text">
-                    <p class="big-text project-name">Fylo Landing Page</p>
-                    <p class="main-text description">Using Pure CSS and JavaScript with two column grid layout. </p>
-                    <a href="https://isatveersingh.github.io/fylo-landing-page-with-two-column-layout/" class="project-btn" target="_blank">See Now</a>
-                </div>
+    <!-- ================ Contact Section ============ -->
+    <section class="contact back-img-fit overlay" id="contact">
+        <div class="container contact-section">
+            <div class="heading">
+                <h2 class="main-heading">Have a <span>Project</span> in mind ?</h2>
+                <p class="text-md">Let's discuss</p>
             </div>
-            <div class="project-card">
-                <div class="project-img">
-                    <img src="./images/huddle-landing-page.jpg" alt="huddle-landing-page">
+
+            <div class="contact-box grid-2">
+                <div class="social-media">
+                    <div class="freelance">
+                        <h3 class="contact-heading">Hire me for <span>Freelance</span> work.</h3>
+                        <div class="freelance-links">
+                            <a href="">Upwork.com</a>
+                            <a href="">Fiverr.com</a>
+                        </div>
+                    </div>
+
+                    <div class="social-link">
+                        <h3 class="contact-heading">Connect Me</h3>
+                        <div class="social-link-items flex">
+                            <a href=""><img src="./images/icons/linkedin.svg" alt="linkedin"></a>
+                            <a href=""><img src="./images/icons/facebook.svg" alt="facebook"></a>
+                        </div>
+                    </div>
                 </div>
-                <div class="project-text">
-                    <p class="big-text project-name">Huddle Landing Page</p>
-                    <p class="main-text description">Using Pure CSS and JavaScript </p>
-                    <a href="https://isatveersingh.github.io/huddle-landing-page-with-alternating-feature-blocks/" class="project-btn" target="_blank">See Now</a>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-img">
-                    <img src="./images/sunny-side-agency-landing-page.jpg" alt="sunny-side-agency-landing-page">
-                </div>
-                <div class="project-text">
-                    <p class="big-text project-name">Sunny Side Agency Landing Page</p>
-                    <p class="main-text description">Using Pure CSS and JavaScript with grid layout. </p>
-                    <a href="https://isatveersingh.github.io/sunnyside-agency-landing-page-main/" class="project-btn" target="_blank">See Now</a>
-                </div>
+
+                <form action="" class="contact-form">
+                    <h3 class="contact-heading">Message Me</h3>
+                    <input type="text" name="" id="" class="input-box" placeholder="Your Name">
+                    <input type="email" name="" id="" class="input-box" placeholder="Email">
+                    <textarea name="" id="" cols="30" rows="10" class="input-box" placeholder="Message"></textarea>
+                    <input type="submit" value="Send Now" class="main-btn">
+                </form>
             </div>
         </div>
     </section>
 
-    <!-- ============== Contact Section ============ -->
-    <section class="contact-section" id="contact">
-        <h2 class="section-heading">Get In Touch</h2>
-        <div class="container section contact grid-c2">
-            <div class="contact-card">
-                <p class="big-text">Work with me on</p>
-                <div class="platforms">
-                    <a href="https://www.upwork.com/freelancers/~013f0e3d0fce43fe42" class="social-link">
-                        <img src="./images/upwork-1.svg" alt="Upwork">
-                        <span>Upwork.com</span>
-                    </a>
-                    <a href="https://www.fiverr.com/isatveersingh" class="social-link">
-                        <img src="./images/fiverr-1.svg" alt="Fiverr">
-                        <span>Fiverr.com</span>
-                    </a>
-                    <!-- <a href="" class="social-link">
-                        <img src="./images/freelancer-1.svg" alt="Freelancer">
-                        <span>Freelancer.com</span>
-                    </a> -->
-                </div>
-            </div>
 
-            <div class="contact-card">
-                <p class="big-text">On LinkedIn</p>
-                <a href="https://www.linkedin.com/in/isatveersingh/" target="_blank" class="social-link"><img src="./images/linkedin-icon-2.svg" alt="LinkedIn"></a>
-
-                <p class="big-text">Email Me</p>
-                <a href="mailto: main.satveer@gmail.com" class="social-link email ">mail.satveer@gmail.com</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- JavaScript File -->
+    <!-- =========== Custom Javascript File ============= -->
     <script src="./js/main.js"></script>
 </body>
 
